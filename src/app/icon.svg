@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="hdfGradient" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#8f1e2d" />
+      <stop offset="1" stop-color="#b02b3d" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#f7f5f3" />
+  <circle cx="64" cy="64" r="44" fill="url(#hdfGradient)" opacity="0.12" />
+  <circle cx="64" cy="64" r="30" fill="none" stroke="#8f1e2d" stroke-width="6" />
+  <text
+    x="64"
+    y="72"
+    text-anchor="middle"
+    font-family="Arial, sans-serif"
+    font-size="32"
+    font-weight="700"
+    fill="#8f1e2d"
+  >
+    HDF
+  </text>
+</svg>

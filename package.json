@@ -9,6 +9,9 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@next/swc-darwin-arm64": "^16.1.6",
+    "@supabase/supabase-js": "^2.49.1",
+    "lucide-react": "^0.522.0",
     "next": "16.1.4",
     "react": "19.2.3",
     "react-dom": "19.2.3"
