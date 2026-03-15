@@ -5,7 +5,6 @@ import HomeAssociationSection from "../components/HomeAssociationSection";
 import { EventCard, NewsCard } from "../components/cards";
 import { getAssociations, getEvents, getPosts } from "../lib/content";
 import { parseDateTime } from "../lib/date";
-import sunImage from "../../sadece_güneş.png";
 
 export default async function Home() {
   const [posts, events, associations] = await Promise.all([
@@ -28,7 +27,7 @@ export default async function Home() {
         description="Köklü geçmişimizden aldığımız ilhamı, başkentin dinamizmiyle birleştirerek toplum için değer üretiyoruz."
         ctaPrimary={{ label: "Dernekleri Gör", href: "/dernekler" }}
         ctaSecondary={{ label: "Etkinlik Takvimi", href: "/etkinlikler" }}
-        backgroundImage={sunImage}
+        backgroundImage="/images/sadece-gunes.png"
       />
 
       <section className="py-16">
