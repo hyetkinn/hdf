@@ -17,6 +17,7 @@ export async function PUT(request: Request) {
     events: [],
     boardMembers: [],
     associations: baseAssociations,
+    councils: [],
   };
   if (!db.associations?.length) {
     db.associations = baseAssociations;

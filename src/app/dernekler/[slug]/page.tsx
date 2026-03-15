@@ -139,7 +139,7 @@ export const renderAssociation = ({
               </p>
               {announcements.length ? (
                 <ul className="mt-3 space-y-2 text-sm text-[#5f677a]">
-                  {announcements.slice(0, 3).map((item, index) => (
+                  {announcements.slice(0, 3).map((item: string, index: number) => (
                     <li key={`${association.id}-ann-${index}`}>• {item}</li>
                   ))}
                 </ul>
@@ -218,7 +218,7 @@ export const renderAssociation = ({
                 Köy Fotoğrafları
               </p>
               <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                {association.galleryImages?.map((image, index) => (
+                {association.galleryImages?.map((image: string, index: number) => (
                   <div
                     key={`${association.id}-image-${index}`}
                     className="relative h-36 overflow-hidden rounded-2xl bg-[#f7f5f3]"
