@@ -120,12 +120,21 @@ export default function Header() {
           <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-6">
             {megaMenu.map((menu) => (
               <div key={menu.label} className="space-y-2">
-                <Link href={menu.href} className="text-base font-semibold text-[#394256]">
+                <Link
+                  href={menu.href}
+                  className="text-base font-semibold text-[#394256]"
+                  onClick={() => setIsOpen(false)}
+                >
                   {menu.label}
                 </Link>
                 <div className="grid gap-2 text-sm text-[#5f677a]">
                   {menu.items.map((item) => (
-                    <Link key={item.label} href={item.href} className="pl-3">
+                    <Link
+                      key={item.label}
+                      href={item.href}
+                      className="pl-3"
+                      onClick={() => setIsOpen(false)}
+                    >
                       {item.label}
                     </Link>
                   ))}
@@ -136,12 +145,14 @@ export default function Header() {
               <Link
                 href="/uye-girisi"
                 className="rounded-full border border-[#e5dfd8] px-4 py-2 text-sm font-semibold text-[#394256]"
+                onClick={() => setIsOpen(false)}
               >
                 Üye Girişi
               </Link>
               <Link
                 href="/dernekler"
                 className="rounded-full bg-[#8f1e2d] px-4 py-2 text-sm font-semibold text-white !text-white shadow-[0_12px_30px_-20px_rgba(127,29,29,0.7)] transition-all hover:-translate-y-0.5 hover:bg-[#7a1826] hover:shadow-[0_16px_36px_-18px_rgba(127,29,29,0.8)]"
+                onClick={() => setIsOpen(false)}
               >
                 Dernekleri Gör
               </Link>
